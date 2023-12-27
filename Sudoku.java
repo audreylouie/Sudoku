@@ -181,9 +181,7 @@ public class Sudoku {
 	
 	// Fill in sudoku by user
 	public boolean enterNumber(int i, int j, int num) {
-		// WRITE CODE HERE
 		//check if num is a valid number for the board
-		
 		if(num < 0 || num > N) {
 			return false;
 		}
@@ -195,16 +193,11 @@ public class Sudoku {
 		if (!CheckIfSafe(i, j, num)) {
 	        return false; // Number violates Sudoku rules
 	    }
-		
-		
 		//update the grid
 		 mat[i][j] = num;
 		//update the number of missing digits 
 		 R--;
-
-		
-		
-		return true; // CHANGE RETURN VALUE
+		return true; 
 	}
 
 	// Driver code
